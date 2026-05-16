@@ -5,9 +5,9 @@ import CurrentWeather from './components/CurrentWeather';
 import ForecastHourly from './components/ForecastHourly';
 import ForecastDaily from './components/ForecastDaily';
 import WeatherChart from './components/WeatherChart';
+import WorldCities from './components/WorldCities';
 import { Loader2, AlertCircle, CloudSun } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-
 function App() {
   const [city, setCity] = useState('Lahore');
   const [weatherData, setWeatherData] = useState(null);
@@ -107,6 +107,7 @@ function App() {
                 <ForecastDaily data={forecastData} />
               </div>
               <WeatherChart data={forecastData} />
+              <WorldCities onCitySelect={handleSearch} />
             </motion.div>
           )}
         </AnimatePresence>
