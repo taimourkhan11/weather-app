@@ -33,7 +33,7 @@ const CurrentWeather = ({ data }) => {
         />
       </div>
 
-      <div className="flex flex-row md:flex-col gap-6 mt-6 md:mt-0">
+      <div className="flex flex-row flex-wrap justify-center md:flex-col gap-4 md:gap-6 mt-6 md:mt-0">
         <div className="flex items-center gap-4 bg-white/5 p-4 rounded-2xl">
           <Thermometer className="text-blue-300" size={24} />
           <div>

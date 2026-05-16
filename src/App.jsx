@@ -51,13 +51,15 @@ function App() {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* Side Logo */}
-      <div className="absolute top-4 left-4 md:top-8 md:left-8 flex items-center gap-2 glass px-4 py-2 rounded-full shadow-lg z-50">
-        <CloudSun className="text-yellow-400" size={28} />
-        <span className="font-extrabold text-xl tracking-wider text-white">TS Weather</span>
+      {/* Header Logo */}
+      <div className="md:absolute top-4 left-4 md:top-8 md:left-8 flex justify-center w-full md:w-auto mb-6 md:mb-0 z-50">
+        <div className="flex items-center gap-2 glass px-4 py-2 rounded-full shadow-lg">
+          <CloudSun className="text-yellow-400" size={28} />
+          <span className="font-extrabold text-xl tracking-wider text-white">TS Weather</span>
+        </div>
       </div>
 
-      <div className="max-w-4xl mx-auto pt-2">
+      <div className="max-w-4xl mx-auto md:pt-2">
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-2 drop-shadow-md">Taimour Sultan</h1>
           <p className="text-white/70 text-lg">Worldwide Weather Dashboard</p>
